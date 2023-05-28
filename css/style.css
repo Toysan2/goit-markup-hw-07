@@ -378,7 +378,7 @@ svg {
     letter-spacing: 3%;
     color: var(--grey-icon);
 }
-.contact-form-button {
+.contact__form__button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
