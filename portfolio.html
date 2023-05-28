@@ -16,36 +16,36 @@
     </head>
     <body>
         <header class="header">
-            <div class="container header-wrapper">
-                <nav class="header-nav">
-                    <a class="logo" href="./index.html"
-                        >Web<span class="logo-black">Studio</span></a
+            <div class="container header__wrapper">
+                <nav class="header__nav">
+                    <a class="header__logo" href="./index.html"
+                        >Web<span class="header__logo--black">Studio</span></a
                     >
-                    <ul class="header-menu">
+                    <ul class="header__menu">
                         <li>
-                            <a class="header-font" href="./index.html"
+                            <a class="header__font-1" href="./index.html"
                                 >Agencja</a
                             >
                         </li>
                         <li>
                             <a
-                                class="header-font nav-link-active"
+                                class="header__font-1 header__link--active"
                                 href="./portfolio.html"
                                 >Portfolio</a
                             >
                         </li>
                         <li>
-                            <a class="header-font" href="#">Kontakt</a>
+                            <a class="header__font-1" href="#">Kontakt</a>
                         </li>
                     </ul>
                 </nav>
-                <ul class="header-contacts">
+                <ul class="header__contacts">
                     <li>
                         <a
-                            class="contact-font contact-link"
+                            class="header__font-2"
                             href="mailto:info@devstudio.com"
                         >
-                            <svg class="contact-icon" width="16" height="12">
+                            <svg class="header__icon" width="16" height="12">
                                 <use
                                     href="./images/svg/icons.svg#icon-envelope"
                                 ></use>
@@ -54,8 +54,8 @@
                         </a>
                     </li>
                     <li>
-                        <a class="contact-font" href="tel:48111111111"
-                            ><svg class="contact-icon" width="10" height="16">
+                        <a class="header__font-2" href="tel:48111111111"
+                            ><svg class="header__icon" width="10" height="16">
                                 <use
                                     href="./images/svg/icons.svg#icon-smartphone"
                                 ></use>
@@ -96,17 +96,17 @@
 
                     <!-- Główna treść strony-->
 
-                    <ul class="products">
+                    <ul class="products__container">
                         <li class="product">
-                            <figure class="card" tabindex="0">
-                                <div class="img-container">
+                            <figure class="product__card" tabindex="0">
+                                <div class="product__card__img__container">
                                     <img
                                         src="images/portfolio/img.jpg"
                                         alt="Zdjęcia 3 pracowników"
                                         width="370"
                                         height="294"
                                     />
-                                    <p class="card-description">
+                                    <p class="product__card--description">
                                         Technocrack jest popularną platformą
                                         wykorzystywaną do rozpowszechniania
                                         koronawirusa. Firmy wykorzystują tę
@@ -115,8 +115,10 @@
                                         konkurencji
                                     </p>
                                 </div>
-                                <div class="product-footer">
-                                    <h3 class="product-name">Technocrack</h3>
+                                <div class="product__footer">
+                                    <h3 class="product__card--name">
+                                        Technocrack
+                                    </h3>
                                     <p class="product-description">
                                         Strona internetowa
                                     </p>
@@ -124,15 +126,15 @@
                             </figure>
                         </li>
                         <li class="product">
-                            <figure class="card" tabindex="0">
-                                <div class="img-container">
+                            <figure class="product__card" tabindex="0">
+                                <div class="product__card__img__container">
                                     <img
                                         src="images/portfolio/img-1.jpg"
                                         alt="Koszykarzy walczących o piłkę"
                                         width="370"
                                         height="294"
                                     />
-                                    <p class="card-description">
+                                    <p class="product__card--description">
                                         Technocrack jest popularną platformą
                                         wykorzystywaną do rozpowszechniania
                                         koronawirusa. Firmy wykorzystują tę
@@ -141,8 +143,8 @@
                                         konkurencji
                                     </p>
                                 </div>
-                                <div class="product-footer">
-                                    <h3 class="product-name">
+                                <div class="product__footer">
+                                    <h3 class="product__card--name">
                                         Grafika New Orlean vs Golden Star
                                     </h3>
                                     <p class="product-description">Dizajn</p>
@@ -150,15 +152,15 @@
                             </figure>
                         </li>
                         <li class="product">
-                            <figure class="card" tabindex="0">
-                                <div class="img-container">
+                            <figure class="product__card" tabindex="0">
+                                <div class="product__card__img__container">
                                     <img
                                         src="images/portfolio/img-2.jpg"
                                         alt="Logo restauracji The Seafood"
                                         width="370"
                                         height="294"
                                     />
-                                    <p class="card-description">
+                                    <p class="product__card--description">
                                         Technocrack jest popularną platformą
                                         wykorzystywaną do rozpowszechniania
                                         koronawirusa. Firmy wykorzystują tę
@@ -167,8 +169,8 @@
                                         konkurencji
                                     </p>
                                 </div>
-                                <div class="product-footer">
-                                    <h3 class="product-name">
+                                <div class="product__footer">
+                                    <h3 class="product__card--name">
                                         Restauracja Seafood
                                     </h3>
                                     <p class="product-description">Aplikacja</p>
@@ -176,15 +178,15 @@
                             </figure>
                         </li>
                         <li class="product">
-                            <figure class="card" tabindex="0">
-                                <div class="img-container">
+                            <figure class="product__card" tabindex="0">
+                                <div class="product__card__img__container">
                                     <img
                                         src="images/portfolio/img-3.jpg"
                                         alt="Czarne słuchawki"
                                         width="370"
                                         height="294"
                                     />
-                                    <p class="card-description">
+                                    <p class="product__card--description">
                                         Technocrack jest popularną platformą
                                         wykorzystywaną do rozpowszechniania
                                         koronawirusa. Firmy wykorzystują tę
@@ -193,22 +195,24 @@
                                         konkurencji
                                     </p>
                                 </div>
-                                <div class="product-footer">
-                                    <h3 class="product-name">Projekt Prime</h3>
+                                <div class="product__footer">
+                                    <h3 class="product__card--name">
+                                        Projekt Prime
+                                    </h3>
                                     <p class="product-description">Marketing</p>
                                 </div>
                             </figure>
                         </li>
                         <li class="product">
-                            <figure class="card" tabindex="0">
-                                <div class="img-container">
+                            <figure class="product__card" tabindex="0">
+                                <div class="product__card__img__container">
                                     <img
                                         src="images/portfolio/img-4.jpg"
                                         alt="Dwa pudełka"
                                         width="370"
                                         height="294"
                                     />
-                                    <p class="card-description">
+                                    <p class="product__card--description">
                                         Technocrack jest popularną platformą
                                         wykorzystywaną do rozpowszechniania
                                         koronawirusa. Firmy wykorzystują tę
@@ -217,22 +221,24 @@
                                         konkurencji
                                     </p>
                                 </div>
-                                <div class="product-footer">
-                                    <h3 class="product-name">Projekt Boxes</h3>
+                                <div class="product__footer">
+                                    <h3 class="product__card--name">
+                                        Projekt Boxes
+                                    </h3>
                                     <p class="product-description">Aplikacja</p>
                                 </div>
                             </figure>
                         </li>
                         <li class="product">
-                            <figure class="card" tabindex="0">
-                                <div class="img-container">
+                            <figure class="product__card" tabindex="0">
+                                <div class="product__card__img__container">
                                     <img
                                         src="images/portfolio/img-5.jpg"
                                         alt="Strona analizjąca mapę świata"
                                         width="370"
                                         height="294"
                                     />
-                                    <p class="card-description">
+                                    <p class="product__card--description">
                                         Technocrack jest popularną platformą
                                         wykorzystywaną do rozpowszechniania
                                         koronawirusa. Firmy wykorzystują tę
@@ -241,8 +247,8 @@
                                         konkurencji
                                     </p>
                                 </div>
-                                <div class="product-footer">
-                                    <h3 class="product-name">
+                                <div class="product__footer">
+                                    <h3 class="product__card--name">
                                         Inspiration has no Borders
                                     </h3>
                                     <p class="product-description">
@@ -252,15 +258,15 @@
                             </figure>
                         </li>
                         <li class="product">
-                            <figure class="card" tabindex="0">
-                                <div class="img-container">
+                            <figure class="product__card" tabindex="0">
+                                <div class="product__card__img__container">
                                     <img
                                         src="images/portfolio/img-6.jpg"
                                         alt="Zdjęcie magazynu Limited Edition"
                                         width="370"
                                         height="294"
                                     />
-                                    <p class="card-description">
+                                    <p class="product__card--description">
                                         Technocrack jest popularną platformą
                                         wykorzystywaną do rozpowszechniania
                                         koronawirusa. Firmy wykorzystują tę
@@ -269,8 +275,8 @@
                                         konkurencji
                                     </p>
                                 </div>
-                                <div class="product-footer">
-                                    <h3 class="product-name">
+                                <div class="product__footer">
+                                    <h3 class="product__card--name">
                                         Magazyn Limited Edition
                                     </h3>
                                     <p class="product-description">Dizajn</p>
@@ -278,15 +284,15 @@
                             </figure>
                         </li>
                         <li class="product">
-                            <figure class="card" tabindex="0">
-                                <div class="img-container">
+                            <figure class="product__card" tabindex="0">
+                                <div class="product__card__img__container">
                                     <img
                                         src="images/portfolio/img-7.jpg"
                                         alt="Plakietka z napisem LABEL TAG"
                                         width="370"
                                         height="294"
                                     />
-                                    <p class="card-description">
+                                    <p class="product__card--description">
                                         Technocrack jest popularną platformą
                                         wykorzystywaną do rozpowszechniania
                                         koronawirusa. Firmy wykorzystują tę
@@ -295,22 +301,24 @@
                                         konkurencji
                                     </p>
                                 </div>
-                                <div class="product-footer">
-                                    <h3 class="product-name">Projekt LAB</h3>
+                                <div class="product__footer">
+                                    <h3 class="product__card--name">
+                                        Projekt LAB
+                                    </h3>
                                     <p class="product-description">Marketing</p>
                                 </div>
                             </figure>
                         </li>
                         <li class="product">
-                            <figure class="card" tabindex="0">
-                                <div class="img-container">
+                            <figure class="product__card" tabindex="0">
+                                <div class="product__card__img__container">
                                     <img
                                         src="images/portfolio/img-8.jpg"
                                         alt="Zdjęcie laptopa wyświetlającego stronę Growing Business"
                                         width="370"
                                         height="294"
                                     />
-                                    <p class="card-description">
+                                    <p class="product__card--description">
                                         Technocrack jest popularną platformą
                                         wykorzystywaną do rozpowszechniania
                                         koronawirusa. Firmy wykorzystują tę
@@ -319,8 +327,8 @@
                                         konkurencji
                                     </p>
                                 </div>
-                                <div class="product-footer">
-                                    <h3 class="product-name">
+                                <div class="product__footer">
+                                    <h3 class="product__card--name">
                                         Growing Business
                                     </h3>
                                     <p class="product-description">Aplikacja</p>
@@ -332,33 +340,33 @@
             </section>
         </main>
         <footer class="footer">
-            <div class="container footer-wrapper">
-                <div class="address-container">
-                    <a class="logo" href="./index.html"
-                        >Web<span class="logo-white">Studio</span></a
+            <div class="container footer__wrapper">
+                <div class="address__container">
+                    <a class="header__logo" href="./index.html"
+                        >Web<span class="header__logo--white">Studio</span></a
                     >
-                    <address class="address-container">
+                    <address class="address__container">
                         <a
                             class="address"
                             href="https://goo.gl/maps/V1taE6vsMn2LFqJW6"
-                            target="_blank"
+                            target="__blank"
                             >m. Warszawa, Aleje Jerozolimskie 21</a
                         >
-                        <a class="footer-font" href="mailto:info@example.com"
+                        <a class="footer__font" href="mailto:info@example.com"
                             >info@example.com</a
                         >
-                        <a class="footer-font" href="tel:48111111111"
+                        <a class="footer__font" href="tel:48111111111"
                             >+48 111 111 111</a
                         >
                     </address>
                 </div>
-                <div class="join-us-container">
-                    <h4 class="join-us">Dołącz do nas</h4>
-                    <div class="join-us-social">
-                        <a class="join-us-size" href="#">
-                            <div class="join-us-size">
+                <div class="join__us__container">
+                    <h4 class="join__us__font">Dołącz do nas</h4>
+                    <div class="join__us__social__container">
+                        <a class="join__us__social__icon__size" href="#">
+                            <div class="join__us__social__icon__size">
                                 <svg
-                                    class="icon-join-us-details"
+                                    class="svg__fill--white"
                                     width="20"
                                     height="20"
                                 >
@@ -366,10 +374,10 @@
                                         href="./images/svg/icons.svg#icon-instagram-2"
                                     ></use>
                                 </svg></div></a
-                        ><a class="join-us-size" href="#">
-                            <div class="join-us-size">
+                        ><a class="join__us__social__icon__size" href="#">
+                            <div class="join__us__social__icon__size">
                                 <svg
-                                    class="icon-join-us-details"
+                                    class="svg__fill--white"
                                     width="20"
                                     height="20"
                                 >
@@ -377,10 +385,10 @@
                                         href="./images/svg/icons.svg#icon-twitter-1"
                                     ></use>
                                 </svg></div></a
-                        ><a class="join-us-size" href="#">
-                            <div class="join-us-size">
+                        ><a class="join__us__social__icon__size" href="#">
+                            <div class="join__us__social__icon__size">
                                 <svg
-                                    class="icon-join-us-details"
+                                    class="svg__fill--white"
                                     width="20"
                                     height="20"
                                 >
@@ -388,10 +396,10 @@
                                         href="./images/svg/icons.svg#icon-facebook-1"
                                     ></use>
                                 </svg></div></a
-                        ><a class="join-us-size" href="#">
-                            <div class="join-us-size">
+                        ><a class="join__us__social__icon__size" href="#">
+                            <div class="join__us__social__icon__size">
                                 <svg
-                                    class="icon-join-us-details"
+                                    class="svg__fill--white"
                                     width="20"
                                     height="20"
                                 >
@@ -403,20 +411,22 @@
                     </div>
                 </div>
                 <div class="newsletter">
-                    <form name="newsletter-form">
+                    <form name="newsletter__form">
                         <label>
-                            <h4 class="join-us">Zapisz się do newslettera</h4>
-                            <inputid
+                            <h4 class="join__us__font">
+                                Zapisz się do newslettera
+                            </h4>
+                            <input
                                 id="email"
-                                class="newsletter-input"
+                                class="newsletter__input"
                                 type="email"
                                 name="email"
                                 placeholder="E-mail"
                                 required
                         /></label>
-                        <button class="newsletter-button" type="submit">
+                        <button class="newsletter__button" type="submit">
                             <div>
-                                <h5 class="newsletter-button-font">
+                                <h5 class="newsletter__button__font">
                                     Zapisz się
                                 </h5>
                             </div>
