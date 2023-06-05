@@ -64,7 +64,7 @@ svg {
     display: flex;
     gap: 50px;
 }
-.header__font-1 {
+.header__link {
     font-style: normal;
     text-decoration: none;
     color: var(--dark-font);
@@ -127,7 +127,7 @@ svg {
     color: var(--only-blue);
     fill: currentColor;
 }
-.header__logo {
+.logo {
     font-family: 'Raleway';
     color: var(--only-blue);
     text-decoration: none;
@@ -136,10 +136,10 @@ svg {
     font-weight: 700;
     letter-spacing: 0.03em;
 }
-.header__logo--white {
+.logo--white {
     color: var(--white-font);
 }
-.header__logo--black {
+.logo--black {
     color: var(--dark-font);
 }
 /* HERO */
@@ -149,14 +149,13 @@ svg {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-}
-.hero__background__image {
     display: block;
     background: url('../images/about-us/hero-background.jpg');
     background-repeat: no-repeat;
     background-color: var(--dark-background);
     background-position: center;
 }
+
 .hero__slogan {
     margin-bottom: 30px;
     font-weight: 900;
@@ -229,15 +228,16 @@ svg {
 .modal__close__icon {
     fill: var(--dark-font);
 }
-.modal__contact__form__font {
+.modal__form--title {
     font-family: Roboto;
     font-weight: Bold;
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 3%;
     color: var(--dark-font);
+    text-align: center;
 }
-.modal__contact__form__user__data__font {
+.modal__form__user__data__font {
     font-family: Roboto;
     font-weight: 400;
     font-size: 12px;
@@ -249,10 +249,11 @@ svg {
     margin-top: 10px;
     margin-bottom: 4px;
 }
-.modal__contact__form__input__svg__container {
+.modal__form__input__svg__container {
     position: relative;
+    margin-left: 40px;
 }
-.modal__contact__form__input {
+.modal__form__input {
     color: var(--dark-font);
     width: 448px;
     height: 40px;
@@ -265,7 +266,7 @@ svg {
     outline: none;
     border-radius: 4px;
 }
-.modal__contact__form__icon {
+.modal__form__icon {
     fill: var(--dark-font);
     position: absolute;
     top: 11px;
@@ -274,7 +275,7 @@ svg {
     transition-duration: 250ms;
     transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__contact__form__input--comment {
+.modal__form__input--comment {
     width: 448px;
     height: 120px;
     padding-top: 12px;
@@ -288,44 +289,46 @@ svg {
     border-radius: 4px;
     margin-bottom: 20px;
     resize: none;
+    margin-left: 40px;
 }
-.modal__contact__form__input--comment::placeholder {
+.modal__form__input--comment::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--grey-font);
     opacity: 0.5; /* Firefox */
 }
-.modal__contact__form__input--comment:-ms-input-placeholder {
+.modal__form__input--comment:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: var(--grey-font);
     opacity: 0.5;
 }
-.modal__contact__form__input--comment::-ms-input-placeholder {
+.modal__form__input--comment::-ms-input-placeholder {
     /* Microsoft Edge */
     color: var(--grey-font);
     opacity: 0.5;
 }
-.modal__contact__form__input--comment:is(:hover, :focus) {
+.modal__form__input--comment:is(:hover, :focus) {
     border: solid 1px var(--only-blue);
 }
-.modal__contact__form__input:is(:hover, :focus) + .modal__contact__form__icon {
+.modal__form__input:is(:hover, :focus) + .modal__form__icon {
     fill: var(--only-blue);
 }
-.modal__contact__form__input:is(:hover, :focus) {
+.modal__form__input:is(:hover, :focus) {
     border: solid 1px var(--only-blue);
 }
-.modal__contact__form__checkbox__container {
+.modal__form__checkbox__container {
     display: block;
     position: relative;
-    padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
+    margin-left: 10px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
-.modal__contact__form__checkbox__container input {
+.modal__form__checkbox__container input {
+    display: block;
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -345,7 +348,7 @@ svg {
     transition-duration: 250ms;
     transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__contact__form__checkbox__container input:checked ~ .checkmark {
+.modal__form__checkbox__container input:checked ~ .checkmark {
     background-color: var(--only-blue);
     border-color: var(--only-blue);
 }
@@ -354,7 +357,7 @@ svg {
     position: absolute;
     display: none;
 }
-.modal__contact__form__checkbox__container .checkmark:after {
+.modal__form__checkbox__container .checkmark:after {
     left: 4px;
     top: -1px;
     width: 5px;
@@ -365,10 +368,10 @@ svg {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-.modal__contact__form__checkbox__container input:checked ~ .checkmark:after {
+.modal__form__checkbox__container input:checked ~ .checkmark:after {
     display: block;
 }
-.modal__contact__form__policy__font {
+.modal__form__policy__font {
     position: absolute;
     font-size: Roboto;
     top: 1px;
@@ -390,9 +393,10 @@ svg {
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     margin-top: 30px;
+    margin-left: 165px;
 }
 /* LOREM IPSUM - index.html*/
-.ul__article__icon {
+.articles__icon {
     display: flex;
     padding-top: 25px;
     justify-content: center;
@@ -401,12 +405,12 @@ svg {
     background-color: var(--grey-background);
     border-radius: 4px;
 }
-.ul__article {
+.articles {
     justify-content: center;
     display: flex;
     gap: 30px;
 }
-.ul__article--headline {
+.articles--headline {
     color: var(--text-color1);
     font-weight: 700;
     font-size: 14px;
@@ -416,7 +420,7 @@ svg {
     padding-bottom: 10px;
     padding-top: 30px;
 }
-.ul__article--text {
+.articles--text {
     color: var(--text-color2);
     font-size: 14px;
     line-height: 1.71;
@@ -435,11 +439,11 @@ svg {
 .section__font--top__padding {
     padding-top: 94px;
 }
-.ul__article__img__with__title {
+.articles__img__with__title {
     position: relative;
     display: flex;
 }
-.ul__article__img__title {
+.articles__img__title {
     font-family: Roboto;
     font-weight: bold;
     font-size: 14px;
