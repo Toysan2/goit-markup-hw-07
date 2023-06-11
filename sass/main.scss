@@ -1,4 +1,4 @@
-@use '/sass/utils/vars.scss';
+@use 'utils/vars.scss';
 
 /*Globals - klasy stosowane globalnie*/
 
@@ -11,7 +11,7 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
-    color: $dark-font;
+    color: vars.$dark-font;
 }
 ul {
     list-style-type: none;
@@ -26,13 +26,13 @@ ul {
     margin: 0 auto;
 }
 .backgroud--black {
-    background-color: $dark-background;
+    background-color: vars.$dark-background;
 }
 .background--grey {
-    background-color: $grey-background;
+    background-color: vars.$grey-background;
 }
 svg {
-    fill: $grey-font;
+    fill: vars.$grey-font;
 }
 
 .header {
@@ -60,7 +60,7 @@ svg {
     &__link {
         font-style: normal;
         text-decoration: none;
-        color: $dark-font;
+        color: vars.$dark-font;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -70,7 +70,7 @@ svg {
         transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
     }
     &__link--active {
-        color: only-blue;
+        color: vars.$only-blue;
         position: relative;
         transition-property: background-color;
         transition-duration: 250ms;
@@ -80,7 +80,7 @@ svg {
         content: '';
         position: absolute;
         display: block;
-        background-color: $only-blue;
+        background-color: vars.$only-blue;
         top: 45px;
         left: 0;
         right: 0;
@@ -93,7 +93,7 @@ svg {
         align-items: center;
         font-style: normal;
         text-decoration: none;
-        color: $grey-font;
+        color: vars.$grey-font;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -111,33 +111,33 @@ svg {
     &__font-2:hover &__icon,
     &__font-2:hover,
     &__font:hover {
-        color: $only-blue;
+        color: vars.$only-blue;
         fill: currentColor;
     }
     &__font-2t:focus &__icon,
     &__font-2:focus,
     &__font:focus {
-        color: $only-blue;
+        color: vars.$only-blue;
         fill: currentColor;
     }
 }
 .logo {
     font-family: 'Raleway';
-    color: $only-blue;
+    color: vars.$only-blue;
     text-decoration: none;
     font-size: 26px;
     line-height: 1.19;
     font-weight: 700;
     letter-spacing: 0.03em;
     &--white {
-        color: $white-font;
+        color: vars.$white-font;
     }
     &--black {
-        color: $dark-font;
+        color: vars.$dark-font;
     }
 }
 .hero {
-    color: $white-font;
+    color: vars.$white-font;
     margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -145,7 +145,7 @@ svg {
     display: block;
     background: url('../images/about-us/hero-background.jpg');
     background-repeat: no-repeat;
-    background-color: $dark-background;
+    background-color: vars.$dark-background;
     background-position: center;
 
     &__slogan {
@@ -167,7 +167,7 @@ svg {
         letter-spacing: 0.06em;
         padding: 10px 42px;
         margin: 0 auto;
-        background-color: $only-blue;
-        color: $white-font;
+        background-color: vars.$only-blue;
+        color: vars.$white-font;
     }
 }
