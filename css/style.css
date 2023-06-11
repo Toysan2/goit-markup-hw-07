@@ -461,7 +461,7 @@ svg {
 }
 /* Nasz zespół */
 
-.ul__team {
+.team {
     justify-content: center;
     text-align: center;
     display: flex;
@@ -473,7 +473,7 @@ ul#team li {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.ul__team__employee--name {
+.team__employee--name {
     color: var(--dark-font);
     font-weight: 500;
     font-size: 16px;
@@ -487,13 +487,13 @@ ul#team li {
     line-height: 1.1875;
     padding-bottom: 16px;
 }
-.ul__team__employee__social__icons_container {
+.team__employee__social__icons_container {
     display: flex;
     justify-content: center;
     gap: 10px;
     padding-bottom: 30px;
 }
-.ul__team__icon-social__icon__size {
+.team__icon-social__icon__size {
     width: 44px;
     height: 44px;
     display: flex;
@@ -504,39 +504,37 @@ ul#team li {
     transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 50%;
 }
-.ul__team__icon-social__icon--animation {
+.team__icon-social__icon--animation {
     transition-property: fill;
     transition-duration: 250ms;
     transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ul__team__icon-social__icon__size:hover
-    .ul__team__icon-social__icon--animation {
+.team__icon-social__icon__size:hover .team__icon-social__icon--animation {
     fill: var(--white-font);
 }
-.ul__team__icon-social__icon__size:hover {
+.team__icon-social__icon__size:hover {
     fill: var(--white-font);
     background-color: var(--only-blue);
 }
-.ul__team__icon-social__icon__size:focus
-    .ul__team__icon-social__icon--animation {
+.team__icon-social__icon__size:focus .team__icon-social__icon--animation {
     fill: var(--white-font);
 }
-.ul__team__icon-social__icon__size:focus {
+.team__icon-social__icon__size:focus {
     fill: var(--white-font);
     background-color: var(--only-blue);
 }
 /* Nasi klienci */
-.client__logos__container {
+.clients__logos__container {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
-.client__logo__animation {
+.clients__logo__animation {
     transition-property: fill;
     transition-duration: 250ms;
     transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client__logo__size {
+.clients__logo__size {
     width: 170px;
     height: 92px;
     display: flex;
@@ -548,16 +546,16 @@ ul#team li {
     transition-duration: 250ms;
     transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client__logo__size:hover .client__logo__animation {
+.clients__logo__size:hover .clients__logo__animation {
     fill: var(--only-blue);
 }
-.client__logo__size:hover {
+.clients__logo__size:hover {
     border-color: var(--only-blue);
 }
-.client__logo__size:focus .client__logo__animation {
+.clients__logo__size:focus .clients__logo__animation {
     fill: var(--only-blue);
 }
-.client__logo__size:focus {
+.clients__logo__size:focus {
     border-color: var(--only-blue);
 }
 /* Footer */

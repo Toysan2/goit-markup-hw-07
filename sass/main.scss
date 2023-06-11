@@ -1,0 +1,33 @@
+/*Globals - klasy stosowane globalnie*/
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    z-index: 1;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $dark-font;
+}
+ul {
+    list-style-type: none;
+}
+.section {
+    padding: 94px 0;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.backgroud--black {
+    background-color: $dark-background;
+}
+.background--grey {
+    background-color: $grey-background;
+}
+svg {
+    fill: grey-font;
+}
