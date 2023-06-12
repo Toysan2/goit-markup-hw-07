@@ -1,7 +1,17 @@
-@use 'utils/vars.scss';
+@import 'utils/vars.scss';
+@import 'components/header.scss';
+@import 'components/logo.scss';
+@import 'components/hero.scss';
+@import 'components/modal.scss';
+@import 'components/articles.scss';
+@import 'components/section.scss';
+@import 'components/team.scss';
+@import 'components/clients.scss';
+@import 'components/footer.scss';
+@import 'components/filters.scss';
+@import 'components/services.scss';
 
 /*Globals - klasy stosowane globalnie*/
-
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +20,8 @@
     z-index: 1;
 }
 body {
-    font-family: 'Roboto', sans-serif;
-    color: vars.$dark-font;
+    font-family: $primary-font, sans-serif;
+    color: $dark-font;
 }
 ul {
     list-style-type: none;
@@ -26,118 +36,31 @@ ul {
     margin: 0 auto;
 }
 .backgroud--black {
-    background-color: vars.$dark-background;
+    background-color: $dark-background;
 }
 .background--grey {
-    background-color: vars.$grey-background;
+    background-color: $grey-background;
 }
 svg {
-    fill: vars.$grey-font;
+    fill: $grey-font;
 }
-
+/*Header*/
 .header {
     padding: 24px 0 25px;
     border-bottom: 1px solid #ececec;
-
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    &__nav {
-        display: flex;
-        align-items: center;
-        gap: 93px;
-    }
-    &__menu {
-        display: flex;
-        gap: 46px;
-    }
-    &__contacts {
-        display: flex;
-        gap: 50px;
-    }
-    &__link {
-        font-style: normal;
-        text-decoration: none;
-        color: vars.$dark-font;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &__link--active {
-        color: vars.$only-blue;
-        position: relative;
-        transition-property: background-color;
-        transition-duration: 250ms;
-        transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &__link--active::after {
-        content: '';
-        position: absolute;
-        display: block;
-        background-color: vars.$only-blue;
-        top: 45px;
-        left: 0;
-        right: 0;
-        height: 4px;
-        width: 100%;
-        border-radius: 2px;
-    }
-    &__font-2 {
-        display: flex;
-        align-items: center;
-        font-style: normal;
-        text-decoration: none;
-        color: vars.$grey-font;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &__icon {
-        margin-right: 10px;
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &__font-2:hover &__icon,
-    &__font-2:hover,
-    &__font:hover {
-        color: vars.$only-blue;
-        fill: currentColor;
-    }
-    &__font-2t:focus &__icon,
-    &__font-2:focus,
-    &__font:focus {
-        color: vars.$only-blue;
-        fill: currentColor;
-    }
 }
 .logo {
-    font-family: 'Raleway';
-    color: vars.$only-blue;
+    font-family: $secondary-font;
+    color: $only-blue;
     text-decoration: none;
     font-size: 26px;
     line-height: 1.19;
     font-weight: 700;
     letter-spacing: 0.03em;
-    &--white {
-        color: vars.$white-font;
-    }
-    &--black {
-        color: vars.$dark-font;
-    }
 }
+/* hero - index.html*/
 .hero {
-    color: vars.$white-font;
+    color: $white-font;
     margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -145,29 +68,48 @@ svg {
     display: block;
     background: url('../images/about-us/hero-background.jpg');
     background-repeat: no-repeat;
-    background-color: vars.$dark-background;
+    background-color: $dark-background;
     background-position: center;
-
-    &__slogan {
-        margin-bottom: 30px;
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.3636;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-    }
-    &__button {
-        border: none;
-        border-radius: 4px;
-        font-family: 'Roboto';
-        cursor: pointer;
-        font-weight: 700;
-        line-height: 1.875;
-        text-align: center;
-        letter-spacing: 0.06em;
-        padding: 10px 42px;
-        margin: 0 auto;
-        background-color: vars.$only-blue;
-        color: vars.$white-font;
-    }
 }
+/*modal - index.html*/
+
+.modal {
+    position: absolute;
+    background-color: $white-font;
+    transform: scale(1);
+    transition: transform 250ms ease-in;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+/* LOREM IPSUM - index.html*/
+
+.articles {
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+/* Czym się zajmujemy - index.html */
+/* Nasz zespół - index.html*/
+
+.team {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 30px;
+}
+ul#team li {
+    background-color: $white-font;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* Nasi klienci - index.html*/
+/* Footer */
+.footer {
+    padding: 60px 0;
+    background-color: $dark-background;
+}
+/* main - filters - portfolio.html */
+/* main - products = portfolio.html */

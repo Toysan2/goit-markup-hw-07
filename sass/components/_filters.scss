@@ -1,0 +1,29 @@
+.button {
+    border: none;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    background-color: $grey-background;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.62;
+    font-weight: 500;
+    padding: 6px 22px;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filters {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    gap: 8px;
+}
+.button:hover {
+    background-color: $only-blue;
+    color: $white-font;
+}
+.button:focus {
+    background-color: $only-blue;
+    color: $white-font;
+}
