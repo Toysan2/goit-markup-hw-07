@@ -13,13 +13,13 @@
         line-height: 1.1875;
         padding-bottom: 16px;
     }
-    &__employee__social__icons_container {
+    &__employee__social-icons-container {
         display: flex;
         justify-content: center;
         gap: 10px;
         padding-bottom: 30px;
     }
-    &__icon-social__icon__size {
+    &__social-icon__size {
         width: 44px;
         height: 44px;
         display: flex;
@@ -30,22 +30,22 @@
         transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
         border-radius: 50%;
     }
-    &__icon-social__icon--animation {
+    &__social-icon--animation {
         transition-property: fill;
         transition-duration: 250ms;
         transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    &__icon-social__icon__size:hover &__icon-social__icon--animation {
+    &__social-icon__size:hover &__social-icon--animation {
         fill: $white-font;
     }
-    &__icon-social__icon__size:hover {
+    &__social-icon__size:hover {
         fill: $white-font;
         background-color: $only-blue;
     }
-    &__icon-social__icon__size:focus &__icon-social__icon--animation {
+    &__social-icon__size:focus &__social-icon--animation {
         fill: $white-font;
     }
-    &__icon-social__icon__size:focus {
+    &__social-icon__size:focus {
         fill: $white-font;
         background-color: $only-blue;
     }

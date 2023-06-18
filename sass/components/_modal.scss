@@ -21,7 +21,7 @@
 }
 
 .modal {
-    &__form__background {
+    &-form__background {
         display: flex;
         flex-direction: column;
         height: 581px;
@@ -29,7 +29,7 @@
         border-radius: 4px;
         z-index: 2;
     }
-    &__close__button {
+    &__close-button {
         display: block;
         align-self: self-end;
         width: 30px;
@@ -38,10 +38,10 @@
         border-radius: 50%;
         margin: 8px;
     }
-    &__close__icon {
+    &__close-icon {
         fill: $dark-font;
     }
-    &__form--title {
+    &-form--title {
         font-family: Roboto;
         font-weight: Bold;
         font-size: 20px;
@@ -50,7 +50,7 @@
         color: $dark-font;
         text-align: center;
     }
-    &__form__user__data__font {
+    &-form__user-data-font {
         font-family: Roboto;
         font-weight: 400;
         font-size: 12px;
@@ -62,11 +62,11 @@
         margin-top: 10px;
         margin-bottom: 4px;
     }
-    &__form__input__svg__container {
+    &-form__input-svg-container {
         position: relative;
         margin-left: 40px;
     }
-    &__form__input {
+    &-form__input {
         color: $dark-font;
         width: 448px;
         height: 40px;
@@ -79,7 +79,7 @@
         outline: none;
         border-radius: 4px;
     }
-    &__form__icon {
+    &-form__icon {
         fill: $dark-font;
         position: absolute;
         top: 11px;
@@ -88,7 +88,7 @@
         transition-duration: 250ms;
         transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    &__form__input--comment {
+    &-form__input--comment {
         width: 448px;
         height: 120px;
         padding-top: 12px;
@@ -104,31 +104,31 @@
         resize: none;
         margin-left: 40px;
     }
-    &__form__input--comment::placeholder {
+    &-form__input--comment::placeholder {
         /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: $grey-font;
         opacity: 0.5; /* Firefox */
     }
-    &__form__input--comment:-ms-input-placeholder {
+    &-form__input--comment:-ms-input-placeholder {
         /* Internet Explorer 10-11 */
         color: $grey-font;
         opacity: 0.5;
     }
-    &__form__input--comment::-ms-input-placeholder {
+    &-form__input--comment::-ms-input-placeholder {
         /* Microsoft Edge */
         color: $grey-font;
         opacity: 0.5;
     }
-    &__form__input--comment:is(:hover, :focus) {
+    &-form__input--comment:is(:hover, :focus) {
         border: solid 1px $only-blue;
     }
-    &__form__input:is(:hover, :focus) + &__form__icon {
+    &-form__input:is(:hover, :focus) + &-form__icon {
         fill: $only-blue;
     }
-    &__form__input:is(:hover, :focus) {
+    &-form__input:is(:hover, :focus) {
         border: solid 1px $only-blue;
     }
-    &__form__checkbox__container {
+    &-form__checkbox-container {
         display: block;
         position: relative;
         margin-bottom: 12px;
@@ -140,7 +140,7 @@
         -ms-user-select: none;
         user-select: none;
     }
-    &__form__checkbox__container input {
+    &-form__checkbox-container input {
         display: block;
         position: absolute;
         opacity: 0;
@@ -161,7 +161,7 @@
         transition-duration: 250ms;
         transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    &__form__checkbox__container input:checked ~ &__checkmark {
+    &-form__checkbox-container input:checked ~ &__checkmark {
         background-color: $only-blue;
         border-color: $only-blue;
     }
@@ -170,7 +170,7 @@
         position: absolute;
         display: none;
     }
-    &__form__checkbox__container &__checkmark:after {
+    &-form__checkbox-container &__checkmark:after {
         left: 4px;
         top: -1px;
         width: 5px;
@@ -181,10 +181,10 @@
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
     }
-    &__form__checkbox__container input:checked ~ &__checkmark:after {
+    &-form__checkbox-container input:checked ~ &__checkmark:after {
         display: block;
     }
-    &__form__policy__font {
+    &-form__policy-font {
         position: absolute;
         font-size: Roboto;
         top: 1px;
@@ -195,7 +195,7 @@
         color: $grey-icon;
     }
 }
-.contact__form__button {
+.contact-form__button {
     display: inline-flex;
     justify-content: center;
     align-items: center;

@@ -1,9 +1,9 @@
 .footer {
-    &__wrapper {
+    &-wrapper {
         display: flex;
         gap: 70px;
     }
-    &__font {
+    &-font {
         font-style: normal;
         text-decoration: none;
         color: $ash-font;
@@ -12,10 +12,10 @@
         line-height: 1.71;
         letter-spacing: 0.02em;
     }
-    &__font:hover {
+    &-font:hover {
         color: $only-blue;
     }
-    &__font:focus {
+    &-font:focus {
         color: $only-blue;
     }
     &__address {
@@ -26,13 +26,14 @@
         line-height: 1.71;
         letter-spacing: 0.03em;
         padding-top: 20px;
+
+        &-container {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+        }
     }
-    &__address__container {
-        display: flex;
-        flex-direction: column;
-        gap: 9px;
-    }
-    &__join__us__font {
+    &__join-us-font {
         font-family: Roboto;
         font-style: Regular;
         font-size: 14px;
@@ -43,96 +44,97 @@
         padding-bottom: 20px;
         text-transform: uppercase;
     }
-    &__join__us__container {
+    &__join-us-container {
         display: flex;
         flex-direction: column;
         margin-top: 12px;
     }
-    &__join__us__social__container {
-        display: flex;
-        gap: 10px;
-    }
+    &__join-us__social {
+        &-container {
+            display: flex;
+            gap: 10px;
+        }
 
-    &__join__us__social__icon__size {
-        width: 44px;
-        height: 44px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
-        transition-property: background-color, border-radius;
-        transition-duration: 250ms;
-        transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
-        border-radius: 50%;
-    }
-    &__join__us__social__icon__size:hover .svg__fill--white {
-        fill: $white-font;
-    }
-    &__join__us__social__icon__size:hover {
-        background-color: $only-blue;
-    }
+        &-icon-size {
+            width: 44px;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition-property: background-color, border-radius;
+            transition-duration: 250ms;
+            transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 50%;
+        }
+        &-icon-size:hover .svg__fill--white {
+            fill: $white-font;
+        }
+        &-icon-size:hover {
+            background-color: $only-blue;
+        }
 
-    &__join__us__social__icon__size:focus
-        .icon-footer__join__us__social__icon__size-details {
-        fill: $white-font;
-    }
-    &__join__us__social__icon__size:focus {
-        background-color: $only-blue;
+        &-icon-size:focus .icon-footer__join-us__social-icon-size-details {
+            fill: $white-font;
+        }
+        &__icon-size:focus {
+            background-color: $only-blue;
+        }
     }
     &__newsletter {
         margin-top: 12px;
         display: flex;
         justify-content: center;
-    }
-    &__newsletter__input {
-        border: Solid 1px rgba(255, 255, 255, 0.3);
-        background-color: $dark-background;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        width: 358px;
-        height: 50px;
-        border-radius: 4px;
-        color: $white-font;
-        padding-left: 16px;
-    }
-    &__newsletter__button {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: 200px;
-        height: 50px;
-        background-color: $only-blue;
-        gap: 24px;
-        border: solid 1px $only-blue;
-        border-radius: 4px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    }
-    &__newsletter__button__font {
-        font-family: Roboto;
-        font-weight: Bold;
-        font-size: 16px;
-        line-height: 1.875;
-        letter-spacing: 6%;
-        color: $white-font;
-        border: solid 1px $only-blue;
-        border-radius: 4px;
-    }
-    &__newsletter__input::placeholder {
-        /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: $white-font;
-        opacity: 0.6; /* Firefox */
-    }
-    &__newsletter__input:-ms-input-placeholder {
-        /* Internet Explorer 10-11 */
-        color: $white-font;
-        opacity: 0.6;
-    }
-    &__newsletter__input::-ms-input-placeholder {
-        /* Microsoft Edge */
-        color: $white-font;
-        opacity: 0.6;
+        &__input {
+            border: Solid 1px rgba(255, 255, 255, 0.3);
+            background-color: $dark-background;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            width: 358px;
+            height: 50px;
+            border-radius: 4px;
+            color: $white-font;
+            padding-left: 16px;
+        }
+        &__button {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 50px;
+            background-color: $only-blue;
+            gap: 24px;
+            border: solid 1px $only-blue;
+            border-radius: 4px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+        &__button-font {
+            font-family: Roboto;
+            font-weight: Bold;
+            font-size: 16px;
+            line-height: 1.875;
+            letter-spacing: 6%;
+            color: $white-font;
+            border: solid 1px $only-blue;
+            border-radius: 4px;
+        }
+        &__input::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: $white-font;
+            opacity: 0.6; /* Firefox */
+        }
+        &__input:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: $white-font;
+            opacity: 0.6;
+        }
+        &__input::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: $white-font;
+            opacity: 0.6;
+        }
     }
 }
-.svg__fill--white {
+.svg-fill--white {
     fill: $white-font;
 }

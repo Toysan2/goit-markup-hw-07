@@ -1,5 +1,5 @@
 .header {
-    &__wrapper {
+    &-wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -48,7 +48,7 @@
         width: 100%;
         border-radius: 2px;
     }
-    &__font-2 {
+    &__font {
         display: flex;
         align-items: center;
         font-style: normal;
@@ -68,14 +68,12 @@
         transition-duration: 250ms;
         transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    &__font-2:hover &__icon,
-    &__font-2:hover,
+    &__font:hover &__icon,
     &__font:hover {
         color: $only-blue;
         fill: currentColor;
     }
-    &__font-2t:focus &__icon,
-    &__font-2:focus,
+    &__font:focus &__icon,
     &__font:focus {
         color: $only-blue;
         fill: currentColor;
